@@ -6,22 +6,22 @@ public class Calculator {
         this.arr = in.input();
     }
     //Calculator Operations
-    int addition(int arr[])
+    int addition()
     {
         int sum = arr[0] + arr[1];
         return(sum);
     }
-    int subtraction(int arr[])
+    int subtraction()
     {
         int diff = arr[0] - arr[1];
         return(diff);
     }
-    int multiplication(int arr[])
+    int multiplication()
     {
         int prod = arr[0] * arr[1];
         return(prod);
     }
-    double division(int arr[])
+    double division()
     {
         double quotient = 0.0d;
         if(arr[1]==0)
