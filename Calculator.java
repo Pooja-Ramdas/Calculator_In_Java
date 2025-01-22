@@ -51,6 +51,29 @@ public class Calculator {
         System.out.println();
         
     }
-    
 
+    // Mean of array
+    void mean(int[] array)
+    {
+        double sum = 0;
+        for (int num : array) {
+            sum += num;
+        }
+        System.out.println("Mean is: " + (sum / array.length));
+    }
+
+    // Variance of array
+    void variance(int[] array)
+    {
+        double sum = 0;
+        for (int num : array) {
+            sum += num;
+        }
+        double mean = sum / array.length;
+        double sumSquaredDiffs = 0;
+        for (int num : array) {
+            sumSquaredDiffs += Math.pow(num - mean, 2);
+        }
+        System.out.println("Variance is: " + (sumSquaredDiffs / array.length));
+    }     
 }
