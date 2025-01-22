@@ -14,6 +14,7 @@ public class UserInput
         arr[1] = second;
         return arr;
     }
+
     //Function to input a single number
     int inputSingle()
     {
@@ -22,5 +23,17 @@ public class UserInput
         return(num);
     }
 
-
+    //Function to input an array 
+    int[] inputArray()
+    {
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt(); 
+        System.out.println("Enter the elements of the array: ");
+        int arr[] = new int[2];
+        for(int i = 0; i<size; i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+        return arr;
+    }
 }
