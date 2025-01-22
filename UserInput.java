@@ -1,7 +1,10 @@
 import java.util.*;
-public class UserInput {
-    int[] input() {
-        Scanner sc = new Scanner(System.in);
+public class UserInput
+{
+    Scanner sc = new Scanner(System.in);
+    //Function to input two numbers and return them as an array
+    int[] input()
+    {
         System.out.println("Enter the value of the first operand: ");
         int first = sc.nextInt();
         System.out.println("Enter the value of the second operand: ");
@@ -11,4 +14,13 @@ public class UserInput {
         arr[1] = second;
         return arr;
     }
+    //Function to input a single number
+    int inputSingle()
+    {
+        System.out.print("Enter a Number: ");
+        int num = sc.nextInt();
+        return(num);
+    }
+
+
 }
